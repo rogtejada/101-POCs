@@ -11,7 +11,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Produces;
 
 @Path("/client")
-public class HelloWorldEndpoint {
+public class Controller {
 
 	@GET
 	@Path("/list")

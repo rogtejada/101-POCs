@@ -1,7 +1,13 @@
 package com.rogtejada.poc.app.entity;
 
+import javax.persistence.*;
+
+@Entity
 public class Client {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     private String name;
     private String lastName;
     private String cpf;
