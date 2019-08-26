@@ -6,7 +6,16 @@
 
 
 #### Thorntail
-- run ```mvn thorntail:run```
+
+- Flyway:
+	- Edit flyway.conf file with URL, password, user and schema
+	- Run ``` mvn flyway:migrate```
+
+- Liquibase:
+	- Edit liquibase.properties with URL, password, user and schema
+	- Run ``` mvn liquibase:update ```
+
+- Run ```mvn thorntail:run``` to deploy application
 
 
 #### Wildfly Standalone
