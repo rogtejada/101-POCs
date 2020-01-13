@@ -1,0 +1,13 @@
+<div class="div">
+  <h3>Type Username: </h3>
+  <input type="text"
+         class="form-control"
+         [(ngModel)]="username">
+  <p>{{username}}</p>
+
+  <button
+    class="btn btn-primary"
+    [disabled]="!username"
+    (click)="resetUsername()">Submit
+  </button>
+</div>

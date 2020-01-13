@@ -1,0 +1,7 @@
+<button class="btn btn-primary" (click)="changeDisplay()">Display Settings</button>
+<p *ngIf="isDisplayActive">Any content</p>
+<div *ngFor="let click of clicks; let i = index"
+    [ngStyle]="{backgroundColor: getBackgroundColor(i)}"
+    [ngClass]="{'white-text': i >= 5}">{{click}}</div>
+
+
